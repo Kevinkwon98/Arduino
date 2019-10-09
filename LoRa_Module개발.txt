@@ -1,0 +1,7 @@
+[LoRa Program History]
+
+(19.7.13)
+1. LoRa_SR1 : 각 송,수신 정보 초기 version
+2. LoRa__Server / Client : 송,수신에 대한 응답까지 수신
+3. LoRa_Comm : 하나의 통합 Program 으로 정리 (ID-A01, ID-SVR)
+4. LoRa_Comm_SVR/Client : 구분  
