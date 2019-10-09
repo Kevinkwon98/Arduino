@@ -3,7 +3,7 @@
 #include <ESP8266WiFi.h>
 
 const char* ssid = "SK_WiFiGIGA8767";
-const char* password = "1712015430";
+const char* password = "*******";
 int ledPin = 2; 
 
 // Arduino standard is GPIO13 but lolin nodeMCU is 2 http://www.esp8266.com/viewtopic.php?f=26&t=13410#p61332
@@ -79,13 +79,13 @@ int value = HIGH; //initially off
  } 
  if (request.indexOf("/LED=BLINK") != -1) {
  digitalWrite(ledPin, LOW);
- delay(1000);
+ delay(500);
  digitalWrite(ledPin, HIGH);
- delay(1000);
+ delay(500);
  digitalWrite(ledPin, LOW);
- delay(1000);
+ delay(500);
  digitalWrite(ledPin, HIGH);
- delay(1000);
+ delay(500);
  
  value = HIGH;
  }
@@ -94,9 +94,10 @@ int value = HIGH; //initially off
  //digitalWrite(ledPin, value);
 
 // Return the response
- client.println("HTTP/1.1 200 OK");
+/* client.println("HTTP/1.1 200 OK");
  client.println("Content-Type: text/html");
- client.println(""); 
+ client.println(""); */
+ 
  client.println("<!DOCTYPE HTML>");
  client.println("<html>");
 
